@@ -23,6 +23,10 @@ a {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .filterbar.submit {
@@ -77,6 +81,10 @@ a {
   position: relative;
   -o-object-fit: fill;
   object-fit: fill;
+}
+
+.mix.star4.level5.sheetpress.works {
+  border-color: #fff53b;
 }
 
 .thumbnail {
@@ -139,11 +147,13 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .tooltip {
@@ -151,11 +161,17 @@ a {
 }
 
 .tooltip.tippy {
-  margin-left: 5px;
+  margin-right: 5px;
+  margin-left: 0px;
 }
 
 .image {
   width: 20px;
+  opacity: 0.7;
+}
+
+.image.tippy {
+  opacity: 0.7;
 }
 
 .dropdown-toggle {
@@ -188,7 +204,7 @@ a {
   margin-left: 4.1px;
   padding-right: 0px;
   padding-left: 10px;
-  text-align: right;
+  text-align: left;
 }
 
 .dropdown-list {
@@ -285,8 +301,12 @@ a {
 
 .button {
   margin-right: 25px;
+  margin-bottom: 10px;
   border-radius: 8px;
   background-color: #f38787;
+  font-family: 'Varela Round', sans-serif;
+  color: #000;
+  font-size: 15px;
 }
 
 .button:hover {
@@ -324,7 +344,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding-right: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -346,13 +366,104 @@ a {
   display: block;
 }
 
+.button-2 {
+  text-align: center;
+}
+
+.button-3 {
+  text-align: center;
+}
+
+.text-block-3 {
+  float: none;
+  font-size: 15px;
+  text-align: left;
+}
+
+.text-block-4 {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.text-block-5 {
+  font-size: 15px;
+}
+
 @media screen and (max-width: 991px) {
+  .filterbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .mix-container {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .thumbnail {
     overflow: hidden;
   }
 
   .content {
     overflow: visible;
+  }
+
+  .button.submitit {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mix {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .filters-controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .filter {
+    margin-right: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .rating {
+    display: none;
+  }
+
+  .difficulty {
+    display: none;
+  }
+
+  .text-block {
+    font-size: 10px;
+  }
+
+  .button.submitit {
+    margin-right: 0px;
   }
 }
 
