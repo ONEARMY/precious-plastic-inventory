@@ -191,6 +191,10 @@ a {
   margin-right: 0px;
 }
 
+.icon.transperant {
+  opacity: 0.43;
+}
+
 .icon-2 {
   margin-right: 10px;
 }
@@ -205,6 +209,10 @@ a {
   padding-right: 0px;
   padding-left: 10px;
   text-align: left;
+}
+
+.dropdown-link.quality {
+  line-height: 17px;
 }
 
 .dropdown-list {
@@ -388,6 +396,10 @@ a {
 
 .text-block-5 {
   font-size: 15px;
+}
+
+.opacity {
+  opacity: 0.32;
 }
 
 @media screen and (max-width: 991px) {
