@@ -83,6 +83,10 @@ a {
   object-fit: fill;
 }
 
+.mix.star3.level3.shredder.works {
+  border-color: #ffbf00;
+}
+
 .mix.star4.level5.sheetpress.works {
   border-color: #fff53b;
 }
@@ -305,6 +309,7 @@ a {
 
 .text-block {
   width: 80%;
+  font-size: 17px;
 }
 
 .button {
@@ -378,6 +383,11 @@ a {
   text-align: center;
 }
 
+.button-2.active {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .button-3 {
   text-align: center;
 }
@@ -400,6 +410,63 @@ a {
 
 .opacity {
   opacity: 0.32;
+}
+
+.active-blokc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.notification {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 0px;
+}
+
+.notification-text {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f38787;
+}
+
+.paragraph {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.feedback {
+  color: #fff;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 991px) {
@@ -476,6 +543,10 @@ a {
 
   .button.submitit {
     margin-right: 0px;
+  }
+
+  .paragraph {
+    font-size: 12px;
   }
 }
 
